@@ -1,14 +1,20 @@
+/*
+    本题需要注意的问题如下:
+    *首先是题目中需求是两个数字之间的绝对值,因此在<stdlib.h>中有 abs(int) 来帮助处理
+    *如果需要 abs<float> 可以使用<cmath>
+    *再有就是本题需要思考的范围是 1 ~ n-1
+*/
 #include<iostream>
 #include<vector>
 #include<stdlib.h>
 #include <algorithm>
 using namespace std;
-void printVector(vector<int> temp){
-    for(int i=0; i<temp.size();i++){
-        cout << temp[i];
-    }
-    cout << endl;
-};
+// void printVector(vector<int> temp){
+//     for(int i=0; i<temp.size();i++){
+//         cout << temp[i];
+//     }
+//     cout << endl;
+// };
 void Jolly(){
     cout << "Jolly" << endl;
 };

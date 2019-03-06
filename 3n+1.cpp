@@ -1,3 +1,9 @@
+/* 
+    本题需要注意的内容如下
+    * 首先两个数字的大小可能是相反的,所以要确保 a > b
+    * 其次需要注意数字的大小范围是否会超过,int 的大小范围在 2^32 次方
+    * 在后面的计算中可能会超过这个大小,因此需要注意使用 long long int
+*/
 #include <iostream>
 using namespace std;
 int lengthCircle(long long int);
