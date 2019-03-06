@@ -1,5 +1,5 @@
 runfile:a.out
-	./a.out < input > output
+	./a.out < input.txt > output.txt
 a.out: main.cpp
 	g++ main.cpp
 clean:
