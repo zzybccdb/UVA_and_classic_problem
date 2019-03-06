@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
-int lengthCircle(int);
+int lengthCircle(long long int);
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int a, b, k, max, temp;
+    long long int a, b, k, max, temp;
     int x, y;
     while(cin>>x>>y){
         a = x;b = y;
@@ -25,7 +25,8 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
-int lengthCircle(int num){
+
+int lengthCircle(long long int num){
     int what=1;
     while(num != 1){
         if(num%2){
