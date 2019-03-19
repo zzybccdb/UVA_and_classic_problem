@@ -5,3 +5,6 @@ output
 test.cpp
 main.cpp
 .DS_Store
+main2.cpp
+bad.cpp
+.vscode/
