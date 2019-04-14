@@ -11,6 +11,7 @@ UVA problem ID
 * [x] 299 - Train Swapping
 * [x] 10038 - Jolly Jumpers
 * [x] 10409 - Die Game
+* [x] 10417 - he Hotel with Infinite Rooms
 * [x] 10189 - Minesweeper
 * [x] 10405 - Longest Common Subsequence -> 最长子字串问题,这里使用 DP(Dynamic programming) 的方式解决
 * [ ] 10066 - The Twin Towers
