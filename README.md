@@ -1,10 +1,15 @@
-# GPE Problem
+# UVA Problem
 
-This repository include my answer about the GPE exam problem
+This repository include my answer about the UVA exam problem
 
-And same time include some comment and what my thinking about problem
+at the same time include some comment and what my thinking about problem
 
-UVA problem ID
+同时还会放入一些经典的问题的解答思考方式。
+
+经典例题：
+1.[x] 二维数组查找问题。限制条件为左到右递增，上到下递增。
+
+UVA problem
 * [x] 100 - The 3n + 1 problem
 * [x] 151 - Power Crisis -> 约瑟夫问题 DP 问题
 * [x] 532 - Dungeon Master -> BFS类型的题目
