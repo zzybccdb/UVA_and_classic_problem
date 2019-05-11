@@ -6,10 +6,11 @@ at the same time include some comment and what my thinking about problem
 
 同时还会放入一些经典的问题的解答思考方式。
 
-LeetCode
-70. [x] Climbing Stairs
+LeetCode:
+- [x] 70. Climbing Stairs
+
 经典例题：
-1. [x] 二维数组查找问题。限制条件为左到右递增，上到下递增。
+- [x] 1. 二维数组查找问题。限制条件为左到右递增，上到下递增。
 
 UVA problem
 * [x] 100 - The 3n + 1 problem
