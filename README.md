@@ -18,6 +18,7 @@ UVA problem
 * [x] 532 - Dungeon Master -> BFS类型的题目
 * [x] 299 - Train Swapping
 * [x] 10038 - Jolly Jumpers
+* [x] 10193 - All You Need Is Love -> 简单题，主要考察最大公约数问题 gcd
 * [x] 10409 - Die Game
 * [x] 10417 - the Hotel with Infinite Rooms -> 很废的题目
 * [x] 10189 - Minesweeper
