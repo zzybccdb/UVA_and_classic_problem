@@ -1,24 +1,27 @@
 /*
     本题的注意事项，这一题的 N 是一个 unsign 的32位的数字.
     因此在型别的选择上，可以选择 unsigned int 或者是 long long int 才可以满足题目需求。
+    sample
+        input :
+            100 50 60
+            100 50 50
+            100 0 100
+            1 0 100
+            15 1 15
+        output:
+            59
+            50
+            27
+            100
+            1
 */
 #include<iostream>
-#include<sstream>
-#include<string>
-#include<vector>
-#include <stdio.h>
-#include <math.h>
 using namespace std;
 int main(){
-    string  s;
-    cin >> ws;
-    while(getline(cin,s)){
-        unsigned int  N, L, U;
-        stringstream ss(s);
-        ss >> N >> L >> U;
+    unsigned int N, L, U;
+    while(cin>>N>>L>>U){
         unsigned int temp = N;
         unsigned int mask10;
-        // cout << N << "," << L << "," << U <<endl;
 		mask10 = 0;
         // 這裡 N >> 4 指的是獲取第四位上的2進制, 在10进位的思考下可以思考成除以2^4;
         // cout << (N >> 4)<< endl; 
@@ -41,7 +44,7 @@ int main(){
             // 这样就会错过一个条件，M >= L; 例如在 100，50，60的 case 中， m = 27， 而不是 59
             // 为了解决这个问题，我们需要把 L 考虑进来
             // 可以这样思考，因为我们是从最高位往下算，所以当 第 i 位 第一次出现 1 的时候，
-            // 我们不能因为 N 的第 i 位为 1 就舍弃它，要把它留下来，不然 mask 就一定会小于 L
+            // 如果此刻的mask 是小於 L的，我们不能因为 N 的第 i 位为 1 就舍弃它，要把它留下来，不然 mask 就一定会小于 L
             // 但是这样有一个漏洞，就是在这里避开了 mask 要小于 U 的限制， 因为 只要 L 的这一位有 1，
             // mask 就会变为 mask | 1u << i; 
             // 这也就意味着，只有 mask < L 的时候才能执行，mask >= L 都不能执行
