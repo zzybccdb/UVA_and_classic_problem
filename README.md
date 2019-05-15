@@ -15,6 +15,7 @@ LeetCode:
 UVA problem
 * [x] 100 - The 3n + 1 problem
 * [x] 151 - Power Crisis -> 约瑟夫问题 DP 问题
+* [x] 10607 - Joseph's Cousin -> 约瑟夫问题变形
 * [x] 532 - Dungeon Master -> BFS类型的题目
 * [x] 299 - Train Swapping
 * [x] 10038 - Jolly Jumpers
