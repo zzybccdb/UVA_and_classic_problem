@@ -2,6 +2,13 @@
 #include<string>
 #include<algorithm>
 using namespace std;
+string myreverse(string str1,int len){
+    string str2 = str1;
+    for(int i=0; i<len;i++){
+        str2[i] = str1[len-i-1];
+    }
+    return str2;
+};
 // 填入 prefix table，輔助計算。
 void prefix_table(string pattern,int prefix[], int n){
     prefix[0] = 0;
@@ -46,16 +53,19 @@ void KMP(string str, string pattern){
         // 但是這並不能說明我們找到了全部的相同子子串
         // 因此需要繼續探索下去，此時只需要從 prefix【j】的位置繼續即可。
         if(j == lp-1 && str[i] == pattern[j]){
-            cout << "Found pattern at" << i-j << endl;
-            i++;
-            j = prefix[j];
+            cout << str << endl;
+            break;
         }
         // 如果str[i] == pattern[j]，i，j個往後移動一位
         if(str[i] == pattern[j]){
-            i++;
             j++;
+            i++;
+            // 特意爲 ecc 這種 case 加的判斷
+            if(i == ls && j == lp-1){
+                cout << str+pattern.substr(j,lp)<<endl;
+            }
         }
-        // 否則，j就調到 prefix【j】的位置。
+        // 否則，j就調到 prefix【j】的位置
         else{
             j=prefix[j];
             if(j==-1){
@@ -64,17 +74,15 @@ void KMP(string str, string pattern){
             }
         }
     }
-
-    for(int i=0; i<lp; i++)
-        cout << prefix[i] << ",";
-    cout << endl;
+    if(j!=lp-1)
+        cout << str+pattern.substr(j,lp)<<endl;
 }
 
 int main(){
     string str1,pattern;
     while(cin>>str1){
         int len = str1.length();
-        string str2 = "ababcabaa";
+        string str2 = myreverse(str1,len);
         KMP(str1,str2);
     }
     return 0;
