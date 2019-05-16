@@ -27,6 +27,7 @@ UVA problem
 * [x] 10405 - Longest Common Subsequence -> 最长子字串问题,这里使用 DP(Dynamic programming) 的方式解决
 * [x] 10664 - Luggage -> 01背包问题 DP 问题
 * [x] 23661 - Bit Mask
+* [x] 24931 - Extend to Palindromes -> KMP的变种问题
 * [ ] 10066 - The Twin Towers
 * [ ] 10192 - Vacation
 * [ ] 11067 - cola
