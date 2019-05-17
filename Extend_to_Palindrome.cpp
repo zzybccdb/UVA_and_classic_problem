@@ -1,3 +1,15 @@
+/*
+    题目描述：题目给定一个字串，希望你在添加最小字元的情况下，得到该字串的回文字串
+    解题思路：
+        - 对于一个给定的字符串，如：        ABAAACCB -> str1
+        - 首先我们需要得到它的一个反转字符串 BCCAAABA -> str2
+        - 目标想让这两个子串能够变成相互回文
+        - 那么可以想象到的就是以 str1 的后缀和 str2 的前缀相同部分叠加的方式，将两个字串链接
+        - 这里 str1 跟 str2 的相同前后缀是 B 
+        - 那么最后的结果就是 ABAAACCBCCAAABA
+        - 由于题目有时间的要求，所以传统的暴力法是不可行的， 因此这里有参考到 KMP
+        - KMP 的 code 在这个 repository 中也有给出了。
+*/
 #include<iostream>
 #include<string>
 #include<algorithm>
