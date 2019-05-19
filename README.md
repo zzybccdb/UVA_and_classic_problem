@@ -8,7 +8,6 @@ at the same time include some comment and what my thinking about problem
 
 LeetCode:
 - [x] 70. Climbing Stairs
-- [ ] the main branch
 
 经典例题：
 - [x] 1. 二维数组查找问题。限制条件为左到右递增，上到下递增。
